@@ -14,6 +14,15 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
+app.get("/accessories", (req, res) => {
+  res.render("accessories.ejs");
+});
+app.get("/hats", (req, res) => {
+  res.render("hats.ejs");
+});
+app.get("/coats", (req, res) => {
+  res.render("coats.ejs");
+});
 
 
 
