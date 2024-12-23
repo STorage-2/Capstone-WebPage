@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+.inconsolata {
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: 260;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 
 * {
   margin: 0;
@@ -338,42 +349,33 @@ img {
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: black;
   text-decoration: none;
-  border: 2px solid transparent;
-  border-radius: 12px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
-.content-nav-link::before,
+
 .content-nav-link::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 0;
-  background: goldenrod; /* Highlight color */
-  transition: all 0.3s ease;
-}
-
-.content-nav-link::before {
-  top: 0;
-  left: 0;
-  border-top: 3px solid transparent;
-  border-left: 3px solid transparent;
-}
-
-.content-nav-link::after {
+  height: 3px;
+  left: 50%;
   bottom: 0;
-  right: 0;
-  border-bottom: 3px solid transparent;
-  border-right: 3px solid transparent;
+  background: goldenrod; 
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
+
 
 .content-nav-link:hover {
-  color: goldenrod; /* Change text color on hover */
+  color: goldenrod; 
   text-decoration: none;
+  
   
 }
 
@@ -385,6 +387,7 @@ img {
 
 .content-nav-link:hover::after {
   width: 100%;
+  transform: translateX(-50%) scaleX(1);
   border-bottom: 3px solid goldenrod;
   border-right: 3px solid goldenrod;
 }
