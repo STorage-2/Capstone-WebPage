@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("index.ejs", {cards});
 });
 app.get("/about", (req, res) => {
   res.render("about.ejs");
@@ -35,7 +35,6 @@ app.post("/submit", (req, res) => {
   cards.push({title}); 
   console.log(cards);
   res.render("index.ejs", {cards});
-  res.redirect("/");
 });
 
 app.listen(port, () => {
