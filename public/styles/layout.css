@@ -24,12 +24,12 @@ i {
 /*----------bootstrap-navbar-css------------*/
 
 .custom-hover {
-  color: goldenrod !important;
+  color: rgb(199, 167, 12) !important;
 
 }
 .navbar-logo {
   padding: 15px;
-  color: goldenrod;
+  color: rgb(199, 167, 12);
 }
 .navbar-mainbg {
   background-color: black;
@@ -51,7 +51,7 @@ i {
   float: left;
 }
 #navbarSupportedContent ul li a {
-  color: goldenrod;
+  color: rgb(199, 167, 12);
   text-decoration: none;
   font-size: 15px;
   display: block;
@@ -61,7 +61,7 @@ i {
   position: relative;
 }
 #navbarSupportedContent > ul > li.active > a {
-  color: goldenrod;
+  color: rgb(199, 167, 12);
   background-color: transparent;
   transition: all 0.7s;
 }
@@ -208,19 +208,19 @@ footer .menu li {
 }
 footer .social_icon li a {
   font-size: 2em;
-  color: goldenrod;
+  color: rgb(199, 167, 12);
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
 }
 footer .social_icon li a:hover {
   transform: translateY(-15px);
-  color: goldenrod;
+  color: rgb(199, 167, 12);
 }
 
 footer .menu li a {
   font-size: 1.2em;
-  color: goldenrod;
+  color: rgb(199, 167, 12);
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
@@ -229,7 +229,7 @@ footer .menu li a {
 }
 footer .menu li a:hover {
   opacity: 1;
-  color: goldenrod;
+  color: rgb(199, 167, 12);
 }
 p {
   color: whtie;
@@ -240,15 +240,23 @@ p {
 }
 
 .copyright {
-  color: goldenrod;
+  color: rgb(199, 167, 12);
 }
 
 /* ======== Content section ========== */
 
-img {
+.galery {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.underline{
+  text-decoration: none;
+}
+.inForm{
+  color: rgb(199, 167, 12);
+  
 }
 
 
@@ -287,7 +295,7 @@ img {
   width: 60%;
   border-radius: 1rem;
   border: none;
-  background-color: goldenrod;
+  background-color: rgb(199, 167, 12);
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -311,7 +319,7 @@ img {
 
 /*Hover*/
 .card:hover {
-  border-color: goldenrod;
+  border-color: rgb(199, 167, 12);
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -365,7 +373,7 @@ img {
   height: 3px;
   left: 50%;
   bottom: 0;
-  background: goldenrod; 
+  background: rgb(199, 167, 12); 
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
@@ -373,21 +381,102 @@ img {
 
 
 .content-nav-link:hover {
-  color: goldenrod; 
+  color: rgb(199, 167, 12); 
   text-decoration: none;
   
   
 }
 
-/* .content-nav-link:hover::before {
-  width: 100%;
-  border-top: 3px solid goldenrod;
-  border-left: 3px solid goldenrod;
-} */
 
 .content-nav-link:hover::after {
   width: 100%;
   transform: translateX(-50%) scaleX(1);
-  border-bottom: 3px solid goldenrod;
-  border-right: 3px solid goldenrod;
+  border-bottom: 3px solid rgb(199, 167, 12);
+  border-right: 3px solid rgb(199, 167, 12);
+}
+
+
+/* =================Form===================== */
+
+.form-container {
+  width: 400px;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: black;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid rgb(199, 167, 12);
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: black;
+  height: 96px;
+  border: 1px solid rgb(199, 167, 12);
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: black;
+  font-weight: 600;
+  width: 40%;
+  background: rgb(199, 167, 12);
+  border: 1px solid rgb(199, 167, 12);
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
 }
